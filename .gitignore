@@ -1,0 +1,41 @@
+# Ignora o ambiente virtual
+venv/
+.env
+
+# Ignora arquivos de configuração do VS Code
+.vscode/
+
+# Ignora arquivos de cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+
+# Ignora arquivos de banco de dados local (SQLite, se houver)
+*.db
+*.sqlite3
+
+# Ignora arquivos de log
+*.log
+
+# Ignora diretórios de build e distribuição
+build/
+dist/
+*.egg-info/
+
+# Ignora arquivos de configuração do Pytest
+.pytest_cache/
+
+# Ignora arquivos de configuração do Insomnia
+.insomnia/
+
+# Ignora arquivos de configuração do Jupyter Notebook
+.ipynb_checkpoints/
+
+# Ignora arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignora arquivos de dependências instaladas (se não estiver usando um requirements.txt)
+pip-selfcheck.json
