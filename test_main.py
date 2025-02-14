@@ -1,26 +1,9 @@
 from fastapi.testclient import TestClient
 from main import app
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from database import Base
-import pytest
 
 SQLALCHEMY_DATABASE_URL = "sqlite:///:memory:"
 
-engine = create_engine(SQLALCHEMY_DATABASE_URL, echo=True)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-
-Base.metadata.create_all(bind=engine)
-
 client = TestClient(app)
-
-@pytest.fixture()
-def db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
 
 def test_create_company(db):
     company_data = {
