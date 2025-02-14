@@ -22,7 +22,7 @@ Este projeto é uma API desenvolvida com **FastAPI** para gerenciar empresas e s
 2. Navegue até a pasta do projeto:
 
     ```bash
-    cd seu-repositorio
+    cd sselectionDcifre
     ```
 
 3. Crie e ative um ambiente virtual:
